@@ -5,15 +5,41 @@
   
 
   
-  <title>Hexo</title>
+  <title>Es原理与使用 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="1、ElasticSearch基本使用1.1、基本介绍1.1.1、ElasticSearch的特色ElasticSearch是实时的分布式搜索分析引擎，内部使用Lucene做索引与搜索  准实时性：新增到ES中的数据在1秒后就可以被检索到，这种新增数据对搜索的可见性称为”准实时搜索” 分布式：意味着可以动态调整集群规模，弹性扩容 集群规模：可以扩展到上百台服务器，处理PB级结构化或非结构化数据 各">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Es原理与使用">
+<meta property="og:url" content="http://example.com/post/Es%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%BF%E7%94%A8.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、ElasticSearch基本使用1.1、基本介绍1.1.1、ElasticSearch的特色ElasticSearch是实时的分布式搜索分析引擎，内部使用Lucene做索引与搜索  准实时性：新增到ES中的数据在1秒后就可以被检索到，这种新增数据对搜索的可见性称为”准实时搜索” 分布式：意味着可以动态调整集群规模，弹性扩容 集群规模：可以扩展到上百台服务器，处理PB级结构化或非结构化数据 各">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-1.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-2.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-3.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-4.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-5.jpg">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-6.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-7.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-8.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-9.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-10.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-11.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-12.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-13.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-14.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-15.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-16.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-17.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-18.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-19.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-20.png">
+<meta property="og:image" content="e:/blog/blog/source_posts/image/es-21.png">
+<meta property="article:published_time" content="2022-11-18T01:42:22.000Z">
+<meta property="article:modified_time" content="2022-11-21T13:45:43.229Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="e:/blog/blog/source_posts/image/es-1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +86,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Es原理与使用" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Es原理与使用" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/post/Es%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%BF%E7%94%A8.html" class="article-date">
   <time datetime="2022-11-18T01:42:22.000Z" itemprop="datePublished">2022-11-18</time>
@@ -75,8 +99,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/post/Es%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%BF%E7%94%A8.html">Es原理与使用</a>
+    <h1 class="article-title" itemprop="name">
+      Es原理与使用
     </h1>
   
 
@@ -1689,114 +1713,19 @@ GET hotel&#x2F;_search
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-计算机原理" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86.html" class="article-date">
-  <time datetime="2022-11-11T02:48:54.000Z" itemprop="datePublished">2022-11-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86.html">计算机原理</a>
-    </h1>
+    <a href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">计算机原理</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="计算机体系结构"><a href="#计算机体系结构" class="headerlink" title="计算机体系结构"></a>计算机体系结构</h1><h2 id="1、CPU（中央处理器）"><a href="#1、CPU（中央处理器）" class="headerlink" title="1、CPU（中央处理器）"></a>1、CPU（中央处理器）</h2><h3 id="1-1、概念："><a href="#1-1、概念：" class="headerlink" title="1.1、概念："></a><strong>1.1、概念：</strong></h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">负责提取程序指令，并对指令进行编码，然后按着程序规定的顺序对正确的数据执行各种操作</code></pre>
-
-<h3 id="1-2、组成："><a href="#1-2、组成：" class="headerlink" title="1.2、组成："></a><strong>1.2、组成：</strong></h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">中央处理器可以分为两部分：数据通道和控制单元</code></pre>
-
-<h4 id="1-2-1、数据通道"><a href="#1-2-1、数据通道" class="headerlink" title="1.2.1、数据通道"></a>1.2.1、数据通道</h4><h5 id="1-2-1-1、寄存器"><a href="#1-2-1-1、寄存器" class="headerlink" title="1.2.1.1、寄存器"></a>1.2.1.1、寄存器</h5><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">寄存器是一种存储二进制数据的硬件设备,寄存器位于处理器的内部，所以处理器可以非常快的访问寄存器中存储的各种信息；计算机通常处理的是一些存储在寄存器中，具有固定大小的二进制的数据；寄存器通常配置是2的指数幂。
-可以向寄存器写入或读取信息，信息也可以在不同的寄存之间传递。寄存器的编址方式与存储器不同，每个存储器都有一个唯一的二进制地址，这些地址是从0开始编码；寄存器则是又cpu内部的控制单元进行编址和处理的。</code></pre>
-
-<h5 id="1-2-1-2、算数逻辑单元（ALU）"><a href="#1-2-1-2、算数逻辑单元（ALU）" class="headerlink" title="1.2.1.2、算数逻辑单元（ALU）"></a>1.2.1.2、算数逻辑单元（ALU）</h5><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">在程序执行过程中进行逻辑运算（如比较运算）和算数运算（如加法和减法）。
-ALU的各种操作常常会影响状态寄存器的某些数据位的数值（设置这些数据位是为了指示某些动作，例如是否有溢出发生）。通过控制单元发出的信号，控制ALU执行各种规定的运算。</code></pre>
-
-<h4 id="1-2-2、控制单元"><a href="#1-2-2、控制单元" class="headerlink" title="1.2.2、控制单元"></a>1.2.2、控制单元</h4><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">控制单元负责监视所有指令的执行和各种信息的传送过程。控制单元负责从内存提取指令，对这些指令进行译码，确保数据适时的出现在正确的地方。控制单元还负责通知ALU应该使用那个寄存器，执行那些中断服务程序，以及对所需执行的各种操作接通ALU中的正确电路，控制单元使用一个称为程序计数器的寄存器来寻找下一条要执行的指令位置，并使用一个状态寄存器来存放某些特殊的状态。</code></pre>
-
-<h3 id="2-2、总线"><a href="#2-2、总线" class="headerlink" title="2.2、总线"></a>2.2、总线</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">CPU通过总线与其他部件连接起来。总线是一组导电线路组合，他作为一个共享和公用的的数据通道将系统内的各个子系统连接在一起。总线由多条线路构成，这样的总线允许多位数据并行传递，</code></pre>
-
-<h3 id="2-3、时钟"><a href="#2-3、时钟" class="headerlink" title="2.3、时钟"></a>2.3、时钟</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">每台计算机都有一个内部时钟，用来控制指令的执行速度。时钟也是用来对系统各个部件的操作进行协调和同步。</code></pre>
-
-<h3 id="2-4、输入-输出子系统"><a href="#2-4、输入-输出子系统" class="headerlink" title="2.4、输入/输出子系统"></a>2.4、输入/输出子系统</h3><pre class="line-numbers language-none"><code class="language-none"></code></pre>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86.html" data-id="claw5tqba00015wtdbpjs9w29" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/post/hello-world.html" class="article-date">
-  <time datetime="2022-11-07T13:20:38.990Z" itemprop="datePublished">2022-11-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/post/hello-world.html">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;My New Post&quot;</code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server</code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate</code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy</code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/post/hello-world.html" data-id="claw5tqb400005wtdfkf674e2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
